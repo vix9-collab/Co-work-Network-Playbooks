@@ -1,0 +1,84 @@
+# 🗺️ Network Design & Planning Assistant
+### Week 1 of 5 · Monday, March 23, 2026
+
+> *From intake notes to a full design proposal in 20 minutes.*
+
+---
+
+## What This Playbook Does
+
+Generate site surveys, IP addressing plans, VLAN schemas, and topology summaries from client intake notes or existing documents.
+
+### Best For
+
+- SMB owners designing their own network
+- Freelance engineers scoping new projects
+- Enterprise architects conducting site assessments
+
+---
+
+## The Prompt
+
+Copy this entire prompt and paste it into your **Claude Cowork** task. Do not change the structure — just add your data at the bottom when you run it.
+
+```
+You are a network design assistant. I will paste in client intake notes or site survey details. Your job is to:
+
+1. Summarize the business requirements
+2. Propose a logical network topology (describe it clearly in text)
+3. Suggest an IP addressing scheme using the provided ranges
+4. Recommend VLAN segmentation with names, IDs, and purpose
+5. List any equipment recommendations with justification
+6. Flag any risks or gaps in the information provided
+
+Output your response as a structured report I can paste into a Word doc. Use headings for each section.
+```
+
+---
+
+## Setup & Connections
+
+### Required MCPs / Connections
+
+| Tool | Purpose |
+|------|---------|
+| **Google Drive** | Read client intake docs and site survey files |
+| **Web Search** | Look up equipment specs, pricing, and vendor docs |
+| **Gmail** | Send the design draft to the client for review |
+
+### Folder Setup in Google Drive
+
+| | Path |
+|---|---|
+| **Input** | `/Network Projects/{Client Name}/Intake/` |
+| **Output** | `/Network Projects/{Client Name}/Design/` |
+| **Save as** | `Design-Summary-{Date}.docx` |
+
+### Scheduler / Trigger
+
+**On-demand** — run when a new project kicks off or a client submits an intake form.
+
+---
+
+## Expected Output
+
+A structured design report including:
+
+- ✅ Business requirement summary
+- ✅ Network topology description
+- ✅ IP addressing scheme
+- ✅ VLAN segmentation table
+- ✅ Equipment list with justification
+- ✅ Flagged risks or information gaps
+
+---
+
+## What's Next
+
+**Coming next Monday: Week 2 — Config Management & Backup Auditor**
+
+> Post it. Ask people to comment **NETWORK**. Send them that week's playbook.
+
+---
+
+*Week 1 of 5 · Paste → Connect → Run · Claude Cowork for Network Engineers*
