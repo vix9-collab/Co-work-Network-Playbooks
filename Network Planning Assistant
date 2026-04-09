@@ -1,5 +1,5 @@
 # 🗺️ Network Design & Planning Assistant
-### Week 1 of 5 · Monday, March 23, 2026
+### Week 1 of 5 · April 9th, 2026
 
 > *From intake notes to a full design proposal in 20 minutes.*
 
@@ -54,11 +54,6 @@ Output your response as a structured report I can paste into a Word doc. Use hea
 | **Output** | `/Network Projects/{Client Name}/Design/` |
 | **Save as** | `Design-Summary-{Date}.docx` |
 
-### Scheduler / Trigger
-
-**On-demand** — run when a new project kicks off or a client submits an intake form.
-
----
 
 ## Expected Output
 
@@ -75,9 +70,7 @@ A structured design report including:
 
 ## What's Next
 
-**Coming next Monday: Week 2 — Config Management & Backup Auditor**
-
-> Post it. Ask people to comment **NETWORK**. Send them that week's playbook.
+**Coming next: Week 2 — Config Management & Backup Auditor**
 
 ---
 
