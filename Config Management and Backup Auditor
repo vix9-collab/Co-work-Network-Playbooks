@@ -1,0 +1,64 @@
+# 🌐 Claude Cowork for Network Engineers · Playbook 2: Config Management & Backup Auditor
+
+>
+> 💾 **Config Management & Backup Auditor**
+> *Paste in any config. Get a prioritized security audit back in minutes.*
+
+---
+
+## What This Playbook Does
+
+Audit config files from routers, switches, and firewalls. Identify security risks, config drift, and missing best practices.
+
+**Best For:** Freelance engineers inheriting unknown networks, MSPs running quarterly reviews, enterprise teams auditing post-change configs.
+
+---
+
+## The Prompt
+
+Copy this entire prompt and paste it into your Claude Cowork task. Do not change the structure — just add your data at the bottom when you run it.
+
+```
+You are a network configuration auditor. I will paste in one or more device configs
+(Cisco IOS, Juniper, Palo Alto, pfSense, or similar). Your job is to:
+
+1. Identify the device type and firmware version if visible
+2. Flag any security risks (open services, weak auth, default credential patterns, unencrypted protocols)
+3. Identify missing best practices (NTP, logging, AAA, banner, SSH v2, etc.)
+4. Note any interface or routing anomalies
+5. Compare against the baseline template if I provide one
+6. Output a prioritized remediation checklist (Critical / High / Medium / Low)
+
+Format output as: Executive Summary → Findings Table → Remediation Checklist.
+```
+
+---
+
+## Setup & Connections
+
+### Required MCPs / Connections
+
+| Tool | Purpose |
+|------|---------|
+| **Google Drive** | Pull stored config files and baseline templates |
+| **Web Search** | Look up vendor CVEs and known vulnerabilities |
+| **Gmail** | Email the audit report to the team or client |
+
+### Folder Setup in Google Drive
+
+```
+Drive: /Configs/{Device Name}/{Date}/
+Drive: /Baselines/{Vendor}/baseline-template.txt
+Save audit as: Audit-{Device}-{Date}.docx
+```
+
+### Scheduler / Trigger
+
+Weekly or after any change window. Can also be triggered by a change ticket.
+
+---
+
+## Expected Output
+
+**Executive Summary + Findings Table + Prioritized Remediation Checklist (Critical / High / Medium / Low).** Ready to send to a client or paste into a ticket.
+
