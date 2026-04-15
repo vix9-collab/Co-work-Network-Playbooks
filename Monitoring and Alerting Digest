@@ -35,5 +35,28 @@ You are a network operations analyst. I will paste in raw monitoring data, alert
 5. Recommend follow-up actions for each major issue
 6. Produce an executive-friendly summary (1 paragraph, no jargon) suitable for a business owner or manager
 
+
 Format:
 Executive Summary → Uptime Table → Alert Log Summary → Recommended Actions.
+
+## Setup & Connections
+Required Integrations
+Google Drive — pull exported monitoring CSVs or weekly report files
+Web Search — check vendor status pages and known issue lookups
+Gmail — send the digest to stakeholders automatically
+
+## Scheduler / Trigger
+
+Every Monday at 7 AM — summarize the prior week's monitoring data.
+Set as a recurring Claude Cowork task.
+
+## Expected Output
+
+Weekly Ops Digest including:
+
+Uptime table per device/segment
+Grouped alert log summary
+Recurring issue patterns
+SLA breach flags
+Recommended actions
+One-paragraph plain-English executive summary
