@@ -1,0 +1,39 @@
+# 📡 Playbook 3 — Monitoring & Alerting Digest
+
+**Claude Cowork for Network Engineers · Playbook 3 of 5**
+
+Turn raw monitoring exports into a weekly ops digest your boss can actually read.
+
+---
+
+## What This Playbook Does
+
+Summarize monitoring tool exports, alert logs, and uptime reports into a readable weekly ops digest — including a plain-English executive summary.
+
+---
+
+## Best For
+
+- SMB owners who want visibility without a NOC  
+- IT managers writing weekly status updates  
+- NOC teams summarizing shift handoffs  
+
+---
+
+## The Prompt
+
+Copy this entire prompt and paste it into your Claude Cowork task.  
+Do not change the structure — just add your data at the bottom when you run it.
+
+```text
+You are a network operations analyst. I will paste in raw monitoring data, alert logs, or uptime reports from tools like PRTG, Zabbix, LibreNMS, SolarWinds, or Meraki Dashboard. Your job is to:
+
+1. Summarize total uptime and availability for each monitored device or segment
+2. List all alerts fired in the period, grouped by severity
+3. Identify recurring issues or patterns (same device alerting repeatedly, same time of day, etc.)
+4. Highlight any SLA breaches or near-misses
+5. Recommend follow-up actions for each major issue
+6. Produce an executive-friendly summary (1 paragraph, no jargon) suitable for a business owner or manager
+
+Format:
+Executive Summary → Uptime Table → Alert Log Summary → Recommended Actions.
