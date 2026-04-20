@@ -2,15 +2,21 @@
 
 Write escalation emails that carriers actually respond to. Stop waiting on hold.
 
+----
+
 ##What This Playbook Does
 
 Draft escalation emails, compile circuit and ticket information, track vendor commitments, and prepare for calls with ISPs or hardware vendors.
+
+------
 
 Best For
 SMB owners managing ISP relationships without a vendor team
 Freelancers handling client carrier issues
 Enterprise teams tired of vague ticket updates
 The Prompt
+
+--------
 
 ##Copy this entire prompt and paste it into your Claude Cowork task.
 Do not change the structure — just add your data at the bottom when you run it.
@@ -35,9 +41,13 @@ Scheduler / Trigger
 
 On-demand — trigger when a ticket exceeds its SLA or a new P1/P2 issue opens.
 
+
+-------------
 ##Expected Output
 
 Escalation email (ready to send)
 3-bullet verbal summary for the call
 Pre-call checklist
 Vendor commitment tracker listing every promise made with dates
+
+----------
