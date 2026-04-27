@@ -31,4 +31,104 @@ Generate a full, usable network documentation pack from raw inputs:
 ## 🧠 The Prompt
 
 Copy and paste this into Claude Cowork.  
-Do not change the structure — just add your data at the bottom.
+Do not change the structure — just add your data at the bottom.You are a network documentation specialist. I will provide raw inputs: config files, IP spreadsheets, handwritten notes, or verbal descriptions. Your job is to:
+
+Produce a clean IP Address Management (IPAM) table with columns: Subnet, VLAN ID, Gateway, DHCP Range, Purpose, and Notes
+Write a site network overview (1-2 paragraphs describing the network architecture in plain English)
+Generate a device inventory table: Device Name, Type, Model, IP, Location, Role
+Create a runbook entry for the top 3 most common tasks on this network (e.g., adding a VLAN, resetting a port, checking uptime)
+Describe the logical network diagram in structured text (ready to build in draw.io or Visio)
+Note any documentation gaps that still need to be filled
+
+Format output as a complete Network Documentation Pack ready to save and share.
+
+
+---
+
+## 🔌 Setup & Connections
+
+### Required Connections (MCPs)
+- Google Drive → read configs, spreadsheets, notes  
+- Web Search → look up vendor/device details  
+- Gmail → send completed doc pack  
+
+---
+
+## 📁 Suggested Folder Structure
+/Documentation/{Site Name}/
+/Documentation/{Site Name}/Diagrams/
+
+
+**File Naming:**
+
+Network-Doc-Pack-{Site}-{Date}.docx
+
+
+---
+
+## ⏱️ When to Use
+
+- Project closeout  
+- After major network changes  
+- Quarterly documentation review  
+- When inheriting a new environment  
+
+---
+
+## 📦 Expected Output
+
+A complete **Network Documentation Pack** including:
+
+- IPAM table  
+- Device inventory  
+- Network overview  
+- Runbooks (top 3 tasks)  
+- Diagram description  
+- Documentation gaps  
+
+---
+
+## ⚡ Example Input
+
+Paste messy, real-world data like this:
+
+
+hostname SW-CORE-01
+
+interface vlan 10
+ip address 10.10.10.1 255.255.255.0
+
+interface vlan 20
+ip address 10.10.20.1 255.255.255.0
+
+Devices:
+UDM-SE - 10.10.10.2 - Server Room
+AP1 - Lobby
+AP2 - Warehouse
+
+Notes:
+
+Guest network added later
+Warehouse scanners on VLAN 20
+No diagram exists
+
+---
+
+## 💡 Why This Matters
+
+Most networks don’t fail because they’re broken.  
+They fail because no one knows what’s there.
+
+This playbook gives you a **starting point instantly** —  
+so you’re not rebuilding documentation from scratch.
+
+---
+
+## 🏁 That’s It
+
+Drop in your inputs.  
+Run the prompt.  
+Get clarity.
+
+Use it.
+
