@@ -1,0 +1,34 @@
+# 📡 Playbook 5 — Network Documentation Generator
+
+**Claude Cowork for Network Engineers · Playbook 5 of 5**
+
+Turn configs, notes, and spreadsheets into a complete Network Documentation Pack.
+
+---
+
+## 🚀 What This Playbook Does
+
+Generate a full, usable network documentation pack from raw inputs:
+
+- IP Address Management (IPAM) table  
+- Device inventory  
+- Plain-English site overview  
+- Runbook entries for common tasks  
+- Logical diagram description  
+- Documentation gaps  
+
+---
+
+## 🎯 Best For
+
+- Engineers inheriting undocumented networks  
+- Freelancers closing out projects cleanly  
+- SMB owners who want clarity and continuity  
+- Teams tired of “don’t touch that” environments  
+
+---
+
+## 🧠 The Prompt
+
+Copy and paste this into Claude Cowork.  
+Do not change the structure — just add your data at the bottom.
